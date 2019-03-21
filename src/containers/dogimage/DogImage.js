@@ -24,9 +24,12 @@ class DogImage extends PureComponent {
     this.props.fetch();
   }
   render() {
-    const { url } = this.props;
+    const { url, fetch } = this.props;
     return (
-      <Image url={url}/>
+      <>
+        <Image url={url}/>
+        <button onClick={fetch}>Get New Dog</button>
+      </>
     );
   }
 }
