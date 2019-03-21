@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Image({ url }) {
+  console.log('url', url);
   return (
     <figure>
       <img src={url} alt="picture of a dog" />
@@ -12,3 +13,5 @@ function Image({ url }) {
 Image.propTypes = {
   url: PropTypes.string.isRequired
 }
+
+export default Image;
