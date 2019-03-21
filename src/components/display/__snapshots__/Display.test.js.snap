@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`display component tests renders the display component correctly 1`] = `
+Array [
+  <h1>
+     hello from display comp
+  </h1>,
+  <button
+    onClick={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+        ],
+      }
+    }
+  >
+    GET NEW DAWG
+  </button>,
+  <img
+    src="something"
+  />,
+]
+`;
