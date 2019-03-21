@@ -1,1 +1,1 @@
-export const getDog = state => state.dog.message;
+export const getDog = state => state.dogs.message;
