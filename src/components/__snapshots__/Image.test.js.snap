@@ -1,15 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Image test matches a snapshot 1`] = `
-Array [
+<div>
   <h3>
      Dog Image 
-  </h3>,
+  </h3>
   <p>
     <img
       src="https://images.dog.ceo/breeds/chihuahua/n02085620_3485.jpg"
     />
     /
-  </p>,
-]
+  </p>
+  <button
+    onClick={[MockFunction]}
+  >
+    Get New Image
+  </button>
+</div>
 `;
