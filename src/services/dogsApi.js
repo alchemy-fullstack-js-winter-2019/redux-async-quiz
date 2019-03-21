@@ -4,7 +4,6 @@ export const getImage = () => {
       return res.json();
     })
     .then(result => {
-      console.log(result);
       return result;
     });
 };
