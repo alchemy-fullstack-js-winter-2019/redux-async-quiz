@@ -5,7 +5,7 @@ import { fetchDog } from '../../actions/dogs';
 import { getDog } from '../../selectors/dogs';
 import Image from '../../components/dogs/Image';
 
-class SimpsonsQuote extends PureComponent {
+class DogImage extends PureComponent {
   static propTypes = {
     dogImage: PropTypes.string.isRequired,
     fetch: PropTypes.func.isRequired
@@ -37,4 +37,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(SimpsonsQuote);
+)(DogImage);
