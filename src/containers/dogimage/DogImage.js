@@ -9,20 +9,20 @@ const mapStateToProps = state => ({
   url: getUrl(state)
 });
 
-// const mapDispatchToProps = dispatch => ({
-//   fetch() {
-//     dispatch(fetchDog());
-//   }
-// });
+const mapDispatchToProps = dispatch => ({
+  fetch() {
+    dispatch(fetchDog());
+  }
+});
 
 class DogImage extends PureComponent {
   static propTypes = {
     url: PropTypes.string.isRequired,
     fetch: PropTypes.func
   }
-  // componentDidMount() {
-  //   this.props.fetch();
-  // }
+  componentDidMount() {
+    this.props.fetch();
+  }
   render() {
     const { url } = this.props;
     return (
@@ -31,4 +31,4 @@ class DogImage extends PureComponent {
   }
 }
 
-export default connect(mapStateToProps, null)(DogImage);
+export default connect(mapStateToProps, mapDispatchToProps)(DogImage);
