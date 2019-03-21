@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image matches a snapshot 1`] = `
+<div>
+  <Load
+    fetch={[MockFunction]}
+  />
+  <br />
+  <img
+    src="https://images.dog.ceo/breeds/cairn/n02096177_599.jpg"
+  />
+</div>
+`;
