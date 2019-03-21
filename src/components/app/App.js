@@ -1,5 +1,8 @@
 import React from 'react';
+import DogContainer from '../../containers/dogs/DogContainer';
 
 export default function App() {
-  return <h1>Hi</h1>;
+  return (
+    <DogContainer />
+  );
 }
