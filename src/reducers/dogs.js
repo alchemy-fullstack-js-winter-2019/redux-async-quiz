@@ -1,7 +1,7 @@
 import { FETCH_DOG } from '../actions/dogs';
 
 const initialState = {
-  url: 'https://images.dog.ceo/breeds/germanshepherd/n02106662_16129.jpg'
+  url: ''
 };
 
 export default function reducer(state = initialState, action) {
