@@ -1,7 +1,7 @@
 import reducer from '../reducers/image';
 import { FETCH_DOG } from '../actions/image';
 
-jest.mock('../services/notes.js');
+jest.mock('../services/dogApi.js');
 
 describe('reducer', () => {
   it('can handle updating state', () => {
@@ -11,7 +11,7 @@ describe('reducer', () => {
     };
     const updatedState = reducer(state, {
       type: FETCH_DOG,
-      payload: [{ url: 'dogurl' }]
+      payload: 'dogurl'
     });
     expect(updatedState).toEqual({
       ...state,
