@@ -1,5 +1,6 @@
 import React from 'react';
+import Image from '../Image';
 
 export default function App() {
-  return <h1>Hi</h1>;
+  return <Image />;
 }
