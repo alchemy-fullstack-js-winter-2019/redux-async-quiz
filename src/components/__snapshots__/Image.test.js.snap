@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image comp matches a snap 1`] = `
+<figure>
+  <img
+    alt="picture of a dog"
+    src="imageurl"
+  />
+</figure>
+`;
