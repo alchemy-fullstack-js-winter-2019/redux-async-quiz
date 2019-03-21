@@ -2,12 +2,12 @@ const initialState = {
   imageUrl: ''
 };
 
-export default function reducer(state = initialState, action) {
-  switch(action.type) {
+export default function reducer(state = initialState, { type, payload }) {
+  switch(type) {
     case 'FETCH_DOG_IMAGE':
       return {
         ...state,
-        imageUrl: action.payload.message
+        imageUrl: payload.message
       };
     default: 
       return state;

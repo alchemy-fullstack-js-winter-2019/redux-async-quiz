@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { fetchDogImage } from '../actions/dogs';
 import { getImageUrl } from '../selectors/dogs';
 import Image from '../components/Image';
-import { getImage } from '../services/dogs';
+// import { getImage } from '../services/dogs';
 
 class DogImage extends PureComponent {
   static propTypes = {
@@ -14,7 +14,7 @@ class DogImage extends PureComponent {
 
   componentDidMount() {
     this.props.fetch();
-    getImage();
+    // getImage();
   }
   render() {
     return (
