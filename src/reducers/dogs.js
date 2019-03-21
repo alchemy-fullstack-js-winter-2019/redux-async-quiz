@@ -1,4 +1,4 @@
-import { FETCH_DOG } from '../actions/dogs';
+import { FETCH_DOG, FETCH_DOG_LOADING } from '../actions/dogs';
 const initialState = {
   dogImage: ''
 };
@@ -10,8 +10,11 @@ export default function reducer(state = initialState, {
     case FETCH_DOG:
       return {
         ...state,
-        dogImage: payload.image
+        dogImage: payload.image,
+        loading: false
       };
+    case FETCH_DOG_LOADING:
+      return { ...state, loading: true };
     default:  
       return state;
   }

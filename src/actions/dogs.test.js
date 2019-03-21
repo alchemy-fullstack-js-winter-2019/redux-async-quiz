@@ -8,6 +8,7 @@ describe('Action test', () => {
     const fetchedAction = fetchDog();
     expect(fetchedAction).toEqual({
       type: FETCH_DOG,
+      loadStart: 'FETCH_DOG_LOADING',
       payload: getDog()
     });
   });
