@@ -1,10 +1,12 @@
 import Image from '../components/Image';
 import { connect } from 'react-redux';
-import { getDog } from '../selectors/dogs';
+import { getDog, isLoading } from '../selectors/dogs';
 import { fetchDog } from '../actions/dogs';
+import { withFetch } from '../components/withFetch';
 
 const mapStateToProps = state => ({
-  dogImage: getDog(state)
+  dogImage: getDog(state),
+  loading: isLoading(state)
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -16,4 +18,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Image);
+)(withFetch(Image));
