@@ -11,6 +11,9 @@ describe('selectors test', () => {
 
     const fetchedUrl = getImageUrl(state);
       
-    expect(fetchedUrl).toEqual('https://images.dog.ceo/breeds/sheepdog-english/n02105641_2052.jpg');
+    expect(fetchedUrl).toEqual({
+      message: 'https://images.dog.ceo/breeds/sheepdog-english/n02105641_2052.jpg',
+      status: 'success'
+    });
   });
 });

@@ -1,1 +1,1 @@
-export const getImageUrl = state => state.imageUrl.message;
+export const getImageUrl = state => state.imageUrl;
