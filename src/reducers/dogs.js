@@ -10,6 +10,7 @@ export default function reducer(state = initialState, action) {
         ...state,
         dog: action.payload.dog
       };
+    default:
+      return state;
   }
-  return state;
 }
