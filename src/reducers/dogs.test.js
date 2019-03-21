@@ -3,17 +3,26 @@ import reducer from './dogs';
 describe('reducer', () => {
   it('handles the fetch dog image url', () => {
     const state = {
-      imageUrl: ''
+      imageUrl: {
+        message: '',
+        status: ''
+      }
     };
     const fetchedUrl = reducer(state, {
       type: 'FETCH_DOG_IMAGE',
       payload: {
-        imageUrl: 'https://images.dog.ceo/breeds/sheepdog-english/n02105641_2052.jpg'
+        imageUrl: {
+          message: 'https://images.dog.ceo/breeds/sheepdog-english/n02105641_2052.jpg',
+          status: 'success'
+        }
       }
     });
 
     expect(fetchedUrl).toEqual({
-      imageUrl: 'https://images.dog.ceo/breeds/sheepdog-english/n02105641_2052.jpg'
+      imageUrl: {
+        message: 'https://images.dog.ceo/breeds/sheepdog-english/n02105641_2052.jpg',
+        status: 'success'
+      }
     });
   });  
 });

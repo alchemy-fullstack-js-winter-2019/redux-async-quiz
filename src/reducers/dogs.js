@@ -1,5 +1,8 @@
 const initialState = {
-  imageUrl: ''
+  imageUrl: {
+    status: '',
+    message: ''
+  }
 };
 
 export default function reducer(state = initialState, action) {
